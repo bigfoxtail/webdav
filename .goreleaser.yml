@@ -15,12 +15,7 @@ builds:
     ldflags:
       - '-X github.com/hacdias/webdav/v5/cmd.version={{.Version}}'
     goos:
-      - darwin
-      - linux
       - windows
-      - freebsd
-      - netbsd
-      - openbsd
     goarch:
       - amd64
       - '386'
@@ -51,7 +46,7 @@ archives:
 
 release:
   github:
-    owner: hacdias
+    owner: bigfoxtail
     name: webdav
   draft: false
   prerelease: auto
